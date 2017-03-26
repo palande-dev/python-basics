@@ -1,0 +1,31 @@
+class MyQueue:
+    def __init__(self):
+	        self.items = []
+	
+    def isEmpty(self):
+	        return self.items == []
+	
+    def enqueue(self, item):
+	        self.items.insert(0,item)
+	
+    def dequeue(self):
+	        return self.items.pop()
+	
+    def size(self):
+	        return len(self.items)
+	        
+    def peek(self):
+          return self.items[len(self.items)-1] 
+          
+	
+q=MyQueue()
+	
+q.enqueue('item 1')
+q.enqueue('item 2')
+q.enqueue('item 3')
+q.enqueue('item 4')
+print('size after enqueue:',q.size())
+print('first element in the Queue:', q.peek())
+q.dequeue()
+print('size after dequeue:',q.size())
+print('first element after 1 dequeue:',q.peek())
