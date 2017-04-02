@@ -19,5 +19,5 @@ data = list(str)
 print data
 print 'perm1'
 for p in perm1(data):
-print p
+	print p
       
