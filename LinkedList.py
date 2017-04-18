@@ -59,6 +59,15 @@ class LinkedList:
         newNode.next = curr.next
         curr.next = newNode
       curr = curr.next
+	  
+  def deleteElement(self, data):
+    count = 1
+    curr = self.head
+    while curr.next != None and curr.data < data:
+      count = count + 1
+      if count == pos:
+        curr.next = curr.next.next
+      curr = curr.next
     
    
 
